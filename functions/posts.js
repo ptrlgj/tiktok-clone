@@ -1,6 +1,6 @@
 const { createClient } = require("@astrajs/collections");
 
-const collection = 'posts';
+const collection = 'tiktokposts';
 
 exports.handler = async function (event, context, callback) {
     const astraClient = await createClient({
@@ -14,11 +14,11 @@ exports.handler = async function (event, context, callback) {
         .collection(collection)
 
     try {
-        const res = await posts.find({})
+        const res = await posts.find()
 
         return{
             statusCode: 200,
-            body: JSON.stringify(res)
+            body: JSON.stringify(Object.keys(res["data"]).map(item => res["data"][item]))
         }
     } catch (error) {
         console.error(error)
