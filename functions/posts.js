@@ -4,7 +4,7 @@ const collection = 'posts';
 
 exports.handler = async function (event, context, callback) {
     const astraClient = await createClient({
-        astraDatabaseId: process.env.ASTRA_DB_ID,
+        astraDatabaseId: process.env.ASTRA_DB_ID, 
         astraDatabaseRegion: process.env.ASTRA_DB_REGION,
         applicationToken: process.env.ASTRA_DB_APPLICATION_TOKEN,
     });
@@ -14,12 +14,11 @@ exports.handler = async function (event, context, callback) {
         .collection(collection)
 
     try {
-        await posts.create("a post", {
-            title: 'my first post',
-        })
+        const res = await posts.find({})
 
         return{
-            statusCode: 200
+            statusCode: 200,
+            body: JSON.stringify(res)
         }
     } catch (error) {
         console.error(error)
