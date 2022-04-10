@@ -30,7 +30,13 @@ function Home() {
               />
             })}
         </div>
-        <div className='suggested-box'></div>
+        <div className='suggested-box'>
+          <div className="section">
+            <div className="suggested">
+              <h2 className="bold">Suggested accounts</h2>
+            </div>
+          </div>
+        </div>
     </div>
   )
 }
