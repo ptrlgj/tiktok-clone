@@ -1,23 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+    color: rgb(22, 24, 35)
+}
+.container{
+    display: flex; 
+    justify-content: space-between;
+    width: 80%;   
+}
+/* header */
+.header {
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0px 1px 6px 1px rgba(0,0,0,0.5);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.header h1{
+    padding: 1rem;
+    font-weight: 800;
+}
+.user-utils{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 150px;
+}
+.user-utils a {
+    font-size: 2.5rem;
+    transform: translateY(5%);
+}
+.user-prof img{
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+}
+
+/* card component*/
+.card{
+    padding: 1rem;
+    margin-top: 1rem;
+}
+.card--body {
+    display: flex;
+}
+.card--body > * {
+    padding: 0 1rem;
+}
+.card--prof {
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    align-self: flex-start;
+    transform: translateY(0.5rem);
+}
+.card--info{
+    display: flex;
+    flex-direction: column;
+}
+.card--info > * {
+    padding: 0.5rem 0;
+}
+.card--name{
+    display: flex;
+}
+.card--name h4{
+    margin-right: 10px;
+}
+.card--video{
+    display: flex;
+    align-items: flex-end;
+}
+.card--video video {
+    max-width: 405px;
+    max-height: 720px;
+    border-radius: 20px;
+}
+.card--socials{
+    display: flex;
+    flex-direction: column;
+}
+.card--socials > * {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+.card--button{
+    align-self: flex-start;
+    background-color: rgba(0,0,0,0);
+    border-radius: 10px;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border: 1px solid rgba(254, 44, 85, 1.0);
+    color: rgba(254, 44, 85, 1.0);
+}
+.card--button:hover{
+    background-color: rgba(254, 44, 85, 0.1);
+}
+.followed{
+    color: white;
+    background-color: rgba(254, 44, 85, 1.0);
+}
+.followed:hover {
+    background-color: rgba(254, 44, 85, 0.9);
+}
 .App {
     text-align: center;
 }
-.container{
-    display: flex;    
-}
-.followers-column{
-    background-color: red;
+
+/* .followers-column{
     width: 500px;
     height: 800px;
-}
+} */
 .feed{
-    background-color: white;
     width: 500px;
 }
-.suggested-box{
-    background-color:blue;
+/* .suggested-box{
     width: 400px;
     height: 400px;
-}
-.header {
-    background: yellow;
-}
+} */
