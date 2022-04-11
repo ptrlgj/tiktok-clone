@@ -16,6 +16,9 @@
     justify-content: space-between;
     width: 90%;   
 }
+button{
+    cursor: pointer;
+}
 /* header */
 .header {
     background-color: white;
