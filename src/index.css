@@ -101,7 +101,7 @@
     align-self: flex-start;
     background-color: rgba(0,0,0,0);
     border-radius: 10px;
-    padding: 0.5rem 0.75rem;
+    padding: 0.3rem 0.5rem;
     font-size: 1rem;
     font-weight: 500;
     border: 1px solid rgba(254, 44, 85, 1.0);
@@ -150,6 +150,47 @@
     color:rgb(22, 24, 35)
 }
 .followed-card--names p{
+    color: rgba(22, 24, 35, 0.75);
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+/* suggested column */
+.suggested-column{
+    /* background-color: brown; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.suggested-column h3{
+    padding-bottom: 2rem;
+}
+.suggested-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.suggested-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.25rem 0;
+}
+.suggested-card button {
+    margin-left:0.3rem;
+    /* align-self: center; */
+}
+.suggested-card--prof{
+    border-radius: 50%;
+    height:3rem;
+    width: 3rem;
+}
+.suggested-card--names{
+    padding-left: 0.5rem;
+}
+.suggested-card--names h3{
+    color:rgb(22, 24, 35)
+}
+.suggested-card--names p{
     color: rgba(22, 24, 35, 0.75);
     font-size: 0.8rem;
     font-weight: 400;
