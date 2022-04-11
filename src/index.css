@@ -198,7 +198,28 @@ button{
     font-size: 0.8rem;
     font-weight: 400;
 }
-
+/* upload page */
+.upload{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.upload h1 {
+    font-size: 4rem;
+}
+.upload p {
+    font-size: 0.9rem;
+    color: rgba(22, 24, 35, 0.5);
+    padding: 1rem 0 ;
+}
+.upload form{
+    display: flex;
+    flex-direction: column;
+}
+.upload form button {
+    align-self: center;
+}
 .App {
     text-align: center;
 }
