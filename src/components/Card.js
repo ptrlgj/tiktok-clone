@@ -11,7 +11,7 @@ const Card = ({avatar, button_visible, caption, comments, id, is_followed, likes
                     </div>
                     <p className="card--caption">{caption}</p>
                     <div className="card--video">
-                        <video src={video}></video>
+                        <video src={video} controls></video>
                         <div className="card--socials">
                             <div className="card--likes">
                                 <FaHeart />

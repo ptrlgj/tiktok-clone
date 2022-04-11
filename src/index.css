@@ -5,6 +5,12 @@
     font-family: Montserrat;
     color: rgb(22, 24, 35)
 }
+.body{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+}
 .container{
     display: flex; 
     justify-content: space-between;
@@ -44,8 +50,7 @@
 /* card component*/
 .card{
     padding: 1rem;
-    margin-top: 1rem;
-    background: grey;
+    /* background: grey; */
 }
 .card--body {
     display: flex;
@@ -112,14 +117,48 @@
 .followed:hover {
     background-color: rgba(254, 44, 85, 0.9);
 }
+/* followers column */
+.followed-column{
+    /* background-color: brown; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.followed-column h3{
+    padding-bottom: 2rem;
+}
+.followed-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.followed-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.25rem 0;
+}
+.followed-card--prof{
+    border-radius: 50%;
+    height:3rem;
+    width: 3rem;
+}
+.followed-card--names{
+    padding-left: 0.5rem;
+}
+.followed-card--names h3{
+    color:rgb(22, 24, 35)
+}
+.followed-card--names p{
+    color: rgba(22, 24, 35, 0.75);
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
 .App {
     text-align: center;
 }
 
-/* .followers-column{
-    width: 500px;
-    height: 800px;
-} */
 /* .feed{
     width: 500px;
 } */

@@ -7,10 +7,14 @@ function App() {
   return (
     <BrowserRouter>
         <Header />
-        <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/upload" element={<Upload />} />
-        </Routes>
+          <div className="body">
+            <div className='container'>
+              <Routes>
+                  <Route path="/" element={<Home />} />
+                  <Route path="/upload" element={<Upload />} />
+              </Routes>
+            </div>
+          </div>
     </BrowserRouter>
   )
 }
